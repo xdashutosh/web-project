@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+<link rel="stylesheet" href="Guessgame.css">
+    
+
+    <title>Guess Me If You Can!</title>
+  </head>
+  <body>
+    <div class="container-fluid mt-5" id="gamesec">
+      <!-- game name -->
+
+      <div class="row" id="gamename">
+        <div class="col-12 text-center">NUMBER GUESSING GAME</div>
+      </div>
+
+      <!-- game intro -->
+
+      <div class="row my-3" id="gameintro">
+        <div class="col-12 text-center">
+          Try and guess a random number between 1 and 20 <br />
+          You have 10 attempts to guess the number
+        </div>
+      </div>
+
+      <!-- game play -->
+      <div class="maingame">
+        <div class="row mt-2" id="gameplay">
+          <div class="col-12 text-center">GUESS A NUMBER!</div>
+        </div>
+        <div class="row my-3" id="inputfield">
+          <div class="col-12 text-center">
+            <input type="text" class="box text-center"/>
+          </div>
+        </div>
+        <div class="row" id="submit">
+          <div class="col-12 text-center">
+            <button class="btn btn-primary">check!</button>
+          </div>
+        </div>
+        <div class="row" id="scorebox">
+          <div class="col-12 text-center mt-3">
+            SCORE <span class="mx-1" id="totalscore">10</span>
+          </div>
+        </div>
+        <div class="row" id="result">
+          <div class="col-12 text-center my-1">
+            HIGHSCORE <span class="mx-1" id="highscore">0</span>
+          </div>
+        </div>
+
+        <div class="row mt-4" id="hint">
+          <div class="col-12 text-center" id="hints">GUESSING.....</div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+
+<script src="Guessgame.js"></script>
+
+  </body>
+</html>
